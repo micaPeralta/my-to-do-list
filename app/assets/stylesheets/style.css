@@ -1,0 +1,62 @@
+.full-width{
+	width: 100%;
+}
+
+.hidden{
+
+	display: none;
+}
+
+.footer-div{
+	padding-top: 0.5em;
+	padding-left: 0.3em;
+	padding-right: 0.3em
+}
+
+ul {
+	margin: 0px;
+}
+
+/*Para evitar que el texto salga del contenedor */
+.contener-texto, td {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	/* Non standard for webkit */
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+.font-ubuntu{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#alert-confirm{
+	padding: 2em;
+}
+
+.input-field label{
+	position: inherit !important;
+}
+
+
+.inline{
+	display: inline;
+}
+
+.no-margin{
+	margin: 0px;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.shadow{
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+.font-pacifico{
+	font-family: 'Pacifico' , cursive;
+}
+
