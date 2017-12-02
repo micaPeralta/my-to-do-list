@@ -11,7 +11,7 @@ My to-do list es una aplicación que te permite crear y manejar las distintas ta
 
 Things you may want to cover:
 
-## DependenciasDependencias 
+## Requerimientos
 
 	Ruby 2.3.1	
 	Bundle 1.13.6
@@ -20,6 +20,8 @@ Things you may want to cover:
 
   
 ## Instalación 
+
+Puede correr el script init.sh o realizar el proceso manualmente:
 
  1. Clone el repositorio 
 
@@ -35,7 +37,13 @@ Things you may want to cover:
 	 cd my-to-do-list
 	 bundle install 
 
-	```
+
+3. Crear e inicializar  base de datos 
+
+	 ```
+	 rails db:setup
+
+	 ```
 
 
 ## Ejecución
@@ -46,4 +54,4 @@ Things you may want to cover:
 	bundle exec rails s
 
 	```
-2. Acceda a la página:  [http://localhost:3000](http://localhost:3000)
+2. Acceda a la página:  [http://localhost:3000](http://localhost:3000) puede acceder con el usuario 'mike@gmail.com' con clave 'mike123'

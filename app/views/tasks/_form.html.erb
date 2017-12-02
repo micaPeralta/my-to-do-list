@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= f.label :due_date %>
-    <%= best_in_place task, :due_date, :as => :date, :class =>'datepicker', data_value: "" %> </p>
+    <%= f.text_field :due_date, class: 'datepicker' %>
   </div>
 
   <div class="field">

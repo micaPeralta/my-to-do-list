@@ -57,6 +57,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #-----------------------------------------------
 
+  # generacion de datos random para los seeders
+  gem 'faker'
+  
   #materialize framework frontend
   gem 'materialize-sass'
 

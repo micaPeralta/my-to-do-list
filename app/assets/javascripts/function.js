@@ -13,7 +13,9 @@ $('.datepicker').pickadate({
     // clear: 'Limpiar',
     // close: 'Cerrar',
     format:'dd/mm/yyyy',
-    closeOnSelect: true
+    closeOnSelect: true,
+    //PARA QUE SOLO PERMITA FECHAS FUTURAS
+    min: new Date()
   })
 
 }
