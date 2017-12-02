@@ -2,11 +2,10 @@ Rails.application.routes.draw do
 	
 
 
-  resources :tasks
-   	devise_for :users 
+  	resources :tasks ,except: [:show, :edit]
+   	devise_for :users , :controllers => { registrations: 'registrations' }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  	resources :lists
-	root :to => redirect("/users/sign_in")
-
+  	
+	root 'tasks#index'
 
 end

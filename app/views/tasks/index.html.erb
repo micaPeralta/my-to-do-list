@@ -1,5 +1,5 @@
 <div class="wow fadeInUp content-card">
-
+  <h5> Hi ! <%= current_user.name %> look at your list of things to do </h5>
   <p id="notice"><%= notice %></p>
   
 
@@ -53,12 +53,7 @@
               </a>
               </td>
              
-             <!-- EDIT -->
-              <td><%= link_to  edit_task_path(task) do %>
-                <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
-                <% end %>
-              </td>
-
+           
               <!-- DELETE -->
               <td><%= link_to  task, method: :delete, data: { confirm: 'Are you sure?' } do %>
                   <i class="fa fa-trash fa-2x" aria-hidden="true"></i>

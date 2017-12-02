@@ -10947,3 +10947,1385 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 11683ms (Views: 11668.6ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:08:56 -0300
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (48.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (29277.9ms)
+Completed 401 Unauthorized in 29797ms (ActiveRecord: 49.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `lin_to' for #<#<Class:0x005573108b7940>:0x007f74f3e07c60>
+Did you mean?  link_to):
+    54:               </td>
+    55:              
+    56:              <!-- EDIT -->
+    57:               <td><%= lin_to  edit_task_path(task) do %>
+    58:                 <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+    59:                 <% end %>
+    60:               </td>
+  
+app/views/tasks/index.html.erb:57:in `block in _app_views_tasks_index_html_erb___3891408317673250751_70070134088580'
+app/views/tasks/index.html.erb:26:in `_app_views_tasks_index_html_erb___3891408317673250751_70070134088580'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (102.3ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (79.5ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (84.4ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (540.8ms)
+Started PUT "/__web_console/repl_sessions/3036a3ddbdf0705b6745112ff5285b5b" for 127.0.0.1 at 2017-12-01 22:09:42 -0300
+Started PUT "/__web_console/repl_sessions/3036a3ddbdf0705b6745112ff5285b5b" for 127.0.0.1 at 2017-12-01 22:10:00 -0300
+  [1m[36mUser Load (66.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/3036a3ddbdf0705b6745112ff5285b5b" for 127.0.0.1 at 2017-12-01 22:10:02 -0300
+Started PUT "/__web_console/repl_sessions/3036a3ddbdf0705b6745112ff5285b5b" for 127.0.0.1 at 2017-12-01 22:10:10 -0300
+Started PUT "/__web_console/repl_sessions/3036a3ddbdf0705b6745112ff5285b5b" for 127.0.0.1 at 2017-12-01 22:10:13 -0300
+Started PUT "/__web_console/repl_sessions/3036a3ddbdf0705b6745112ff5285b5b" for 127.0.0.1 at 2017-12-01 22:11:01 -0300
+Started PUT "/__web_console/repl_sessions/3036a3ddbdf0705b6745112ff5285b5b" for 127.0.0.1 at 2017-12-01 22:11:08 -0300
+Started PUT "/__web_console/repl_sessions/3036a3ddbdf0705b6745112ff5285b5b" for 127.0.0.1 at 2017-12-01 22:11:10 -0300
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:16:36 -0300
+  
+NoMethodError (undefined method `attr_accessible' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  attr_accessor):
+  
+app/models/user.rb:7:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+config/routes.rb:6:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (150.9ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (92.7ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (31.5ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (826.1ms)
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:17:01 -0300
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (10.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (929.3ms)
+Completed 401 Unauthorized in 5940ms (ActiveRecord: 116.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `attr_accessible' for #<Class:0x007f74f19a4d78>
+Did you mean?  attr_accessor):
+    56:                           
+    57:                         </div> 
+    58:                         <div>
+    59:                       <% if user_signed_in? %>
+    60:                           <span>User<%= current_user.username %></span>
+    61:                          <%end %>
+    62:                         </div> 
+  
+app/models/user.rb:7:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/views/layouts/application.html.erb:59:in `_app_views_layouts_application_html_erb__2548946317701698900_70069986630380'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (192.0ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (66.2ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (24.5ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (575.1ms)
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:17:44 -0300
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (388.7ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1659ms (Views: 1574.2ms | ActiveRecord: 31.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-12-01 22:18:02 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v+kT6e3ou3F1TdsWf7G9eUvfOEmKo6T0M7jPZTuF8stmU6+eO4/KBnkgARxVOqWJpBGVPacBPJ8MlyS1//834g=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (3.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-01 22:18:03 -0300
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-01 22:18:03 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (15.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 283ms (Views: 280.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-12-01 22:18:07 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 472ms (Views: 469.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-01 22:18:39 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ljrJxNM/CNYjyvF6Y0REFQy+xqvdaNE0RZMkwzHQzJs/Z/+5NVOLIzM0Qm6T6e5Nv9uUWy0Axmq3944hVCeecg==", "user"=>{"username"=>"alejandro", "email"=>"asasas@jama.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: username
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2017-12-02 01:18:39.610851"], ["updated_at", "2017-12-02 01:18:39.610851"]]
+  [1m[35m (132.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-12-02 01:18:39.760373"], ["last_sign_in_at", "2017-12-02 01:18:39.760373"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-12-02 01:18:39.773103"], ["id", 2]]
+  [1m[35m (104.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 292ms (ActiveRecord: 238.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:18:39 -0300
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (13.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 340ms (Views: 323.0ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (105.9ms)[0m  [1m[35mCREATE TABLE "lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "due_date" date, "description" text, "done" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (72.9ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "due_date" date, "description" text, "done" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (85.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "username" varchar DEFAULT '' NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (132.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (151.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (98.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (63.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171201032041)[0m
+  [1m[35m (71.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171130172914);
+
+[0m
+  [1m[35m (119.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-02 01:21:55.696627"], ["updated_at", "2017-12-02 01:21:55.696627"]]
+  [1m[35m (91.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (81.8ms)[0m  [1m[35mCREATE TABLE "lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "due_date" date, "description" text, "done" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (86.2ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "due_date" date, "description" text, "done" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (108.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "username" varchar DEFAULT '' NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (98.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (88.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (86.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (91.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171201032041)[0m
+  [1m[35m (68.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171130172914);
+
+[0m
+  [1m[35m (91.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-02 01:21:56.623738"], ["updated_at", "2017-12-02 01:21:56.623738"]]
+  [1m[35m (70.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameToUsers (20171202012731)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "users" ADD "name" varchar NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:34:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.6) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.6) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (422.8ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (70.5ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (52.5ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1052.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameToUsers (20171202012731)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "name" varchar NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameToUsers (20171202012731)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (11.2ms)[0m  [1m[35mALTER TABLE "users" ADD "name" varchar DEFAULT '' NOT NULL[0m
+  [1m[35mSQL (4.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171202012731"]]
+  [1m[35m (128.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (16.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:38:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (106.6ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 3461ms (Views: 3289.4ms | ActiveRecord: 46.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-01 22:39:41 -0300
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-01 22:39:41 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (54.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (187.5ms)
+Completed 200 OK in 2043ms (Views: 1623.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:41:52 -0300
+  
+SyntaxError (/home/mika/Documentos/my-to-do-list/app/controllers/tasks_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+  before_action : authenticate_user!
+                 ^):
+  
+app/controllers/tasks_controller.rb:3: syntax error, unexpected ':', expecting keyword_end
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (84.6ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (41.2ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (25.4ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (354.1ms)
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:43:02 -0300
+Processing by TasksController#index as HTML
+Completed 401 Unauthorized in 96ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-01 22:43:04 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (60.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (171.7ms)
+Completed 200 OK in 3392ms (Views: 2913.3ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-12-01 22:43:17 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (44.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (246.1ms)
+Completed 200 OK in 3370ms (Views: 3350.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-01 22:43:35 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jmuoGwCmucCU/16rob2rhOdqIHeFV0Nqf0ww+fZTCQ8nNp5m5so6NYQB7b9REAHcVA9yh3U/VDSNKJobk6Rb5g==", "user"=>{"name"=>"micaela", "email"=>"mika_peralta93@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: name
+  [1m[35m (17.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mika_peralta93@yahoo.com"], ["LIMIT", 1]]
+  [1m[35mSQL (21.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "mika_peralta93@yahoo.com"], ["encrypted_password", "$2a$11$JbXduoQrA7uuhkyySyoEBuHNdKt7U5VWowdb40.yeAT3oKxC6o3CO"], ["created_at", "2017-12-02 01:43:36.434322"], ["updated_at", "2017-12-02 01:43:36.434322"]]
+  [1m[35m (175.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (17.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-12-02 01:43:36.746969"], ["last_sign_in_at", "2017-12-02 01:43:36.746969"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-12-02 01:43:36.756641"], ["id", 1]]
+  [1m[35m (149.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 1336ms (ActiveRecord: 382.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:43:37 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (93.7ms)
+Completed 200 OK in 3057ms (Views: 2948.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:45:23 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (42.8ms)
+  [1m[36mTask Load (6.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+Completed 401 Unauthorized in 6168ms (ActiveRecord: 8.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `ser_signed_in?' for #<#<Class:0x007f74e051ea30>:0x007f74d06fa968>
+Did you mean?  user_signed_in?):
+    56:                           
+    57:                         </div> 
+    58:                         <div>
+    59:                       <% if ser_signed_in? %>
+    60:                           <span>User<%= current_user.name %></span>
+    61:                          <%end %>
+    62:                         </div> 
+  
+app/views/layouts/application.html.erb:59:in `_app_views_layouts_application_html_erb__2548946317701698900_70070047383300'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.5ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.6ms)
+Started PUT "/__web_console/repl_sessions/748a83b3a290d6f6ed389349f5a8a12b" for 127.0.0.1 at 2017-12-01 22:45:34 -0300
+Started PUT "/__web_console/repl_sessions/748a83b3a290d6f6ed389349f5a8a12b" for 127.0.0.1 at 2017-12-01 22:45:41 -0300
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:48:42 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mika/Documentos/my-to-do-list/app/controllers/application_controller.rb:9)
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 1298ms (Views: 984.5ms | ActiveRecord: 45.7ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (233.4ms)[0m  [1m[35mCREATE TABLE "lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "due_date" date, "description" text, "done" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (127.7ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "due_date" date, "description" text, "done" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (134.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "username" varchar DEFAULT '' NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar DEFAULT '' NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (129.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (80.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (94.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (65.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171202012731)[0m
+  [1m[35m (66.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171201032041),
+(20171130172914);
+
+[0m
+  [1m[35m (89.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-02 01:49:26.985881"], ["updated_at", "2017-12-02 01:49:26.985881"]]
+  [1m[35m (61.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (142.5ms)[0m  [1m[35mCREATE TABLE "lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "due_date" date, "description" text, "done" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (86.4ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "due_date" date, "description" text, "done" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (96.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "username" varchar DEFAULT '' NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar DEFAULT '' NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (89.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (118.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (97.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (105.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171202012731)[0m
+  [1m[35m (56.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171201032041),
+(20171130172914);
+
+[0m
+  [1m[35m (110.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-02 01:49:27.988192"], ["updated_at", "2017-12-02 01:49:27.988192"]]
+  [1m[35m (59.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-12-01 22:49:57 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1ucBdjp2SstvJRKPq549HJV2cBLabkCGzFB9DxoQYdRNV7s8cZU3WhFF4Kmeg+sRN1ccoEOt4g116WEazOyT6Q=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 23ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `for' for #<Devise::ParameterSanitizer:0x007f74f210fc70>
+Did you mean?  fork):
+  
+app/controllers/application_controller.rb:14:in `configure_permitted_parameters'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-12-01 22:50:03 -0300
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (475.8ms)
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1ucBdjp2SstvJRKPq549HJV2cBLabkCGzFB9DxoQYdRNV7s8cZU3WhFF4Kmeg+sRN1ccoEOt4g116WEazOyT6Q=="}
+  [1m[36mUser Load (51.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 93ms (ActiveRecord: 51.4ms)
+
+
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (71.7ms)
+Started GET "/" for 127.0.0.1 at 2017-12-01 22:50:04 -0300
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-01 22:50:04 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (83.2ms)
+Completed 401 Unauthorized in 23ms (ActiveRecord: 0.0ms)
+
+
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1180.9ms)
+  
+NoMethodError (undefined method `for' for #<Devise::ParameterSanitizer:0x007f74e20be790>
+Did you mean?  fork):
+  
+app/controllers/application_controller.rb:14:in `configure_permitted_parameters'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (88.7ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (34.4ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (32.5ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (273.7ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-01 22:54:20 -0300
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mika/Documentos/my-to-do-list/app/controllers/application_controller.rb:9)
+Processing by Devise::SessionsController#new as HTML
+Completed 401 Unauthorized in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `for' for #<Devise::ParameterSanitizer:0x007f74f20b33d0>
+Did you mean?  fork):
+  
+app/controllers/application_controller.rb:14:in `configure_permitted_parameters'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (97.7ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (65.8ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (31.8ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (531.7ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-01 22:54:38 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (87.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (292.1ms)
+Completed 200 OK in 4583ms (Views: 4186.5ms | ActiveRecord: 90.7ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-12-01 22:54:52 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (154.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (316.9ms)
+Completed 200 OK in 2934ms (Views: 2874.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-01 22:55:14 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QgZ7505AphdAhtC9Hke6bb2/VU/gOQkkUUrhw86w8/XrW02aqCwl4lB4Y6nu6hA1DtoHvxBRHnqjLkshq0ehHA==", "user"=>{"name"=>"pamela", "email"=>"pamela@kasak.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "pamela@kasak.com"], ["LIMIT", 1]]
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?, ?)[0m  [["email", "pamela@kasak.com"], ["encrypted_password", "$2a$11$TL67gGAm3sIS6k29e8iSSuyzLRG49P27u.QywbsbMbkUNF2YQyFzu"], ["created_at", "2017-12-02 01:55:15.848784"], ["updated_at", "2017-12-02 01:55:15.848784"], ["name", "pamela"]]
+  [1m[35m (82.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-12-02 01:55:16.143837"], ["last_sign_in_at", "2017-12-02 01:55:16.143837"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-12-02 01:55:16.146284"], ["id", 1]]
+  [1m[35m (75.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 1340ms (ActiveRecord: 162.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:55:16 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (52.2ms)
+Completed 200 OK in 1332ms (Views: 1256.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:57:08 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 2320ms (Views: 2290.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:57:15 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 2238ms (Views: 2212.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:57:59 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 620ms (Views: 614.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 22:59:05 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 2563ms (Views: 2538.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 23:01:11 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 1308ms (Views: 1282.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:01:41 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (250.8ms)
+  Rendered tasks/new.html.erb within layouts/application (264.1ms)
+Completed 200 OK in 902ms (Views: 602.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:02:42 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (22.4ms)
+  Rendered tasks/new.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 252ms (Views: 237.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:03:08 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (22.2ms)
+  Rendered tasks/new.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 314ms (Views: 293.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:03:21 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (18.1ms)
+  Rendered tasks/new.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 498ms (Views: 485.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:03:54 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (10.4ms)
+  Rendered tasks/new.html.erb within layouts/application (13.0ms)
+Completed 401 Unauthorized in 113ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/mika/Documentos/my-to-do-list/app/views/tasks/_form.html.erb:35: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+...er.append=( f.submit ,:class => 'waves-effect waves-light bt...
+...                               ^):
+  
+app/views/tasks/_form.html.erb:35: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/tasks/new.html.erb:6:in `_app_views_tasks_new_html_erb__618421247306651979_70070128684360'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (187.5ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (94.8ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (41.1ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (621.4ms)
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:04:21 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (13.5ms)
+  Rendered tasks/new.html.erb within layouts/application (29.2ms)
+Completed 401 Unauthorized in 84ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/home/mika/Documentos/my-to-do-list/app/views/tasks/_form.html.erb:35: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=( f.submit ,class:'waves-effect waves-light btn...
+...                               ^):
+  
+app/views/tasks/_form.html.erb:35: syntax error, unexpected tLABEL, expecting '='
+app/views/tasks/new.html.erb:6:in `_app_views_tasks_new_html_erb__618421247306651979_70070047656820'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (107.0ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (61.7ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (47.5ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (492.3ms)
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:04:40 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (47.2ms)
+  Rendered tasks/new.html.erb within layouts/application (51.7ms)
+Completed 401 Unauthorized in 105ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/mika/Documentos/my-to-do-list/app/views/tasks/_form.html.erb:35: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+...er.append=( f.submit ,:class => 'waves-effect waves-light bt...
+...                               ^):
+  
+app/views/tasks/_form.html.erb:35: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/tasks/new.html.erb:6:in `_app_views_tasks_new_html_erb__618421247306651979_70069989260820'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (136.7ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.1ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (25.2ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (380.0ms)
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:05:01 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (34.8ms)
+  Rendered tasks/new.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 899ms (Views: 884.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:05:50 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (62.4ms)
+  Rendered tasks/new.html.erb within layouts/application (66.1ms)
+Completed 200 OK in 436ms (Views: 425.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:05:56 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (29.1ms)
+  Rendered tasks/new.html.erb within layouts/application (61.4ms)
+Completed 200 OK in 872ms (Views: 864.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:06:10 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (11.9ms)
+  Rendered tasks/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 366ms (Views: 358.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:14:12 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (46.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (265.9ms)
+  Rendered tasks/new.html.erb within layouts/application (378.8ms)
+Completed 200 OK in 18411ms (Views: 18163.6ms | ActiveRecord: 46.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:18:00 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (200.5ms)
+  Rendered tasks/new.html.erb within layouts/application (311.9ms)
+Completed 200 OK in 5564ms (Views: 5468.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:24:03 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (56.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (180.3ms)
+  Rendered tasks/new.html.erb within layouts/application (224.6ms)
+Completed 200 OK in 2068ms (Views: 1887.7ms | ActiveRecord: 56.8ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:25:50 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (18.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (200.2ms)
+  Rendered tasks/new.html.erb within layouts/application (271.2ms)
+Completed 200 OK in 3093ms (Views: 2937.1ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:26:09 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (111.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (363.9ms)
+  Rendered tasks/new.html.erb within layouts/application (492.4ms)
+Completed 200 OK in 11589ms (Views: 10874.1ms | ActiveRecord: 111.6ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:27:11 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (95.1ms)
+  Rendered tasks/new.html.erb within layouts/application (121.5ms)
+Completed 200 OK in 2828ms (Views: 2800.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2017-12-01 23:28:03 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AtX6bg9Mlx1PLzp3b2BTFfWVwx3XG879cxlmS/nWTxyZZUAkRK/qjDFPyFFafYUYV7Svr07YbHbKoHpeLyq9IQ==", "task"=>{"title"=>"una tarea", "due_date"=>"14/12/2017", "description"=>"una descripcion re copada", "done"=>"0"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (45.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (143.5ms)[0m  [1m[32mINSERT INTO "tasks" ("title", "due_date", "description", "done", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "una tarea"], ["due_date", "2017-12-14"], ["description", "una descripcion re copada"], ["done", "f"], ["created_at", "2017-12-02 02:28:05.508094"], ["updated_at", "2017-12-02 02:28:05.508094"]]
+  [1m[35m (295.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/1
+Completed 302 Found in 7194ms (ActiveRecord: 485.8ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2017-12-01 23:28:11 -0300
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (69.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (150.0ms)
+Completed 200 OK in 4227ms (Views: 3865.3ms | ActiveRecord: 70.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 23:28:20 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2179.9ms)
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 23:28:26 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (223.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (457.8ms)
+Completed 200 OK in 12448ms (Views: 12285.1ms | ActiveRecord: 1.3ms)
+
+
+Completed 200 OK in 6550ms (Views: 6008.5ms | ActiveRecord: 223.8ms)
+
+
+Started PUT "/tasks/1" for 127.0.0.1 at 2017-12-01 23:28:41 -0300
+Processing by TasksController#update as JSON
+  Parameters: {"task"=>{"done"=>"true"}, "authenticity_token"=>"ZDbrvrbLNEQwIOZbhwBH1m2yZ6QElUFIQIuj3NbSzSr/hlH0/ShJ1U5AFH2yHZHbz5MLFp1W48P5Mr/JAC4/Fw==", "id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (8.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "tasks" SET "done" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["done", "t"], ["updated_at", "2017-12-02 02:28:42.258803"], ["id", 1]]
+  [1m[35m (118.2ms)[0m  [1m[36mcommit transaction[0m
+  Rendering tasks/show.json.jbuilder
+  Rendered tasks/_task.json.jbuilder (169.1ms)
+  Rendered tasks/show.json.jbuilder (2379.9ms)
+Completed 200 OK in 2963ms (Views: 2549.5ms | ActiveRecord: 127.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 23:29:06 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (283.6ms)
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2017-12-01 23:29:13 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (102.2ms)
+  Rendered tasks/edit.html.erb within layouts/application (245.7ms)
+Completed 200 OK in 7688ms (Views: 7443.9ms | ActiveRecord: 12.9ms)
+
+
+Completed 200 OK in 1594ms (Views: 1373.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks/" for 127.0.0.1 at 2017-12-01 23:42:33 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (100.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (84.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (5971.7ms)
+Completed 200 OK in 62769ms (Views: 52937.9ms | ActiveRecord: 1338.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-01 23:45:03 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (469.7ms)
+Completed 200 OK in 6599ms (Views: 5847.5ms | ActiveRecord: 131.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-01 23:45:19 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (99.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2934.9ms)
+Completed 200 OK in 8318ms (Views: 8174.0ms | ActiveRecord: 101.1ms)
+
+
+Started DELETE "/tasks/1" for 127.0.0.1 at 2017-12-01 23:46:16 -0300
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cn0zKoJ91JOcxibv0DX2OZ5VXTDGaIF7fCakZYPF+rPpzYlgyZ6pAuKm1MnlKCA0PHQxgl+rI/DFn7hwVTkIjg==", "id"=>"1"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (72.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (645.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 3342ms (ActiveRecord: 983.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 23:46:24 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (46.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (161.3ms)
+Completed 200 OK in 4775ms (Views: 4698.1ms | ActiveRecord: 46.6ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2017-12-01 23:46:46 -0300
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (50.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (674.5ms)
+  Rendered tasks/new.html.erb within layouts/application (782.7ms)
+Completed 200 OK in 3822ms (Views: 3696.6ms | ActiveRecord: 50.9ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2017-12-01 23:47:03 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qsjrKSXVv38kSL6AKb6NRTHNSjeJzWMiwVWaPp27zUw0n6fxxgG27oCZYwhhchW1GtlwrdFP8R/hfTaU72sttQ==", "task"=>{"title"=>"asas", "due_date"=>"07/12/2017", "description"=>"dsdsds", "done"=>"0"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (75.5ms)[0m  [1m[32mINSERT INTO "tasks" ("title", "due_date", "description", "done", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "asas"], ["due_date", "2017-12-07"], ["description", "dsdsds"], ["done", "f"], ["created_at", "2017-12-02 02:47:04.422202"], ["updated_at", "2017-12-02 02:47:04.422202"]]
+  [1m[35m (265.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 401 Unauthorized in 980ms (ActiveRecord: 352.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"tasks", :controller=>"tasks", :notice=>"Task was successfully created."}):
+  
+app/controllers/tasks_controller.rb:32:in `block (2 levels) in create'
+app/controllers/tasks_controller.rb:30:in `create'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (222.3ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (108.4ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (139.1ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (918.8ms)
+Started POST "/tasks" for 127.0.0.1 at 2017-12-01 23:47:46 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qsjrKSXVv38kSL6AKb6NRTHNSjeJzWMiwVWaPp27zUw0n6fxxgG27oCZYwhhchW1GtlwrdFP8R/hfTaU72sttQ==", "task"=>{"title"=>"asas", "due_date"=>"07/12/2017", "description"=>"dsdsds", "done"=>"0"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (9.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (30.5ms)[0m  [1m[32mINSERT INTO "tasks" ("title", "due_date", "description", "done", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "asas"], ["due_date", "2017-12-07"], ["description", "dsdsds"], ["done", "f"], ["created_at", "2017-12-02 02:47:47.668530"], ["updated_at", "2017-12-02 02:47:47.668530"]]
+  [1m[35m (122.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 401 Unauthorized in 612ms (ActiveRecord: 170.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"tasks#index", :controller=>"tasks", :notice=>"Task was successfully created."}):
+  
+app/controllers/tasks_controller.rb:32:in `block (2 levels) in create'
+app/controllers/tasks_controller.rb:30:in `create'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (119.4ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (83.3ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (20.6ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (495.2ms)
+Started POST "/tasks" for 127.0.0.1 at 2017-12-01 23:48:11 -0300
+  
+SyntaxError (/home/mika/Documentos/my-to-do-list/app/controllers/tasks_controller.rb:32: syntax error, unexpected ':', expecting '}'
+...rmat.html { redirect_to_action: "tasks#index", notice: 'Task...
+...                               ^
+/home/mika/Documentos/my-to-do-list/app/controllers/tasks_controller.rb:32: syntax error, unexpected ',', expecting '}'
+...irect_to_action: "tasks#index", notice: 'Task was successful...
+...                               ^):
+  
+app/controllers/tasks_controller.rb:32: syntax error, unexpected ':', expecting '}'
+app/controllers/tasks_controller.rb:32: syntax error, unexpected ',', expecting '}'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (96.7ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (97.1ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (108.8ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (567.7ms)
+Started POST "/tasks" for 127.0.0.1 at 2017-12-01 23:48:46 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qsjrKSXVv38kSL6AKb6NRTHNSjeJzWMiwVWaPp27zUw0n6fxxgG27oCZYwhhchW1GtlwrdFP8R/hfTaU72sttQ==", "task"=>{"title"=>"asas", "due_date"=>"07/12/2017", "description"=>"dsdsds", "done"=>"0"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.1ms)[0m  [1m[32mINSERT INTO "tasks" ("title", "due_date", "description", "done", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "asas"], ["due_date", "2017-12-07"], ["description", "dsdsds"], ["done", "f"], ["created_at", "2017-12-02 02:48:47.417671"], ["updated_at", "2017-12-02 02:48:47.417671"]]
+  [1m[35m (163.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 401 Unauthorized in 691ms (ActiveRecord: 204.8ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"tasks#index", :controller=>"tasks", :notice=>"Task was successfully created."}):
+  
+app/controllers/tasks_controller.rb:32:in `block (2 levels) in create'
+app/controllers/tasks_controller.rb:30:in `create'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (111.1ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (35.3ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (55.1ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (610.5ms)
+Started POST "/tasks" for 127.0.0.1 at 2017-12-01 23:51:20 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qsjrKSXVv38kSL6AKb6NRTHNSjeJzWMiwVWaPp27zUw0n6fxxgG27oCZYwhhchW1GtlwrdFP8R/hfTaU72sttQ==", "task"=>{"title"=>"asas", "due_date"=>"07/12/2017", "description"=>"dsdsds", "done"=>"0"}, "commit"=>"Create Task"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (7.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (18.3ms)[0m  [1m[32mINSERT INTO "tasks" ("title", "due_date", "description", "done", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "asas"], ["due_date", "2017-12-07"], ["description", "dsdsds"], ["done", "f"], ["created_at", "2017-12-02 02:51:23.176931"], ["updated_at", "2017-12-02 02:51:23.176931"]]
+  [1m[35m (116.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 1178ms (ActiveRecord: 189.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 23:51:23 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (735.8ms)
+Completed 200 OK in 4280ms (Views: 4155.3ms | ActiveRecord: 11.2ms)
+
+
+Started PUT "/tasks/2" for 127.0.0.1 at 2017-12-01 23:52:08 -0300
+Processing by TasksController#update as JSON
+  Parameters: {"task"=>{"title"=>"Estudiar para el final de concurrente"}, "authenticity_token"=>"nL1OHsvtWP5jZUc+pGyVVDugS7JOTokQHpAlCX5zPEIHDfRUgA4lbx0FtRiRcUNZmYEnANeNK5unKTkcqI/Ofw==", "id"=>"2"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (22.7ms)[0m  [1m[33mUPDATE "tasks" SET "title" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["title", "Estudiar para el final de concurrente"], ["updated_at", "2017-12-02 02:52:08.216817"], ["id", 2]]
+  [1m[35m (73.3ms)[0m  [1m[36mcommit transaction[0m
+  Rendering tasks/show.json.jbuilder
+  Rendered tasks/_task.json.jbuilder (36.9ms)
+  Rendered tasks/show.json.jbuilder (1606.6ms)
+Completed 200 OK in 2047ms (Views: 1730.2ms | ActiveRecord: 97.2ms)
+
+
+Started PUT "/tasks/3" for 127.0.0.1 at 2017-12-01 23:52:26 -0300
+Processing by TasksController#update as JSON
+  Parameters: {"task"=>{"title"=>"Limpiar mi habitacion"}, "authenticity_token"=>"nL1OHsvtWP5jZUc+pGyVVDugS7JOTokQHpAlCX5zPEIHDfRUgA4lbx0FtRiRcUNZmYEnANeNK5unKTkcqI/Ofw==", "id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE "tasks" SET "title" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["title", "Limpiar mi habitacion"], ["updated_at", "2017-12-02 02:52:26.707204"], ["id", 3]]
+  [1m[35m (302.7ms)[0m  [1m[36mcommit transaction[0m
+  Rendering tasks/show.json.jbuilder
+  Rendered tasks/_task.json.jbuilder (23.1ms)
+  Rendered tasks/show.json.jbuilder (88.4ms)
+Completed 200 OK in 415ms (Views: 97.0ms | ActiveRecord: 306.7ms)
+
+
+Started PUT "/tasks/4" for 127.0.0.1 at 2017-12-01 23:52:43 -0300
+Processing by TasksController#update as JSON
+  Parameters: {"task"=>{"title"=>"comprar regalo para mama"}, "authenticity_token"=>"nL1OHsvtWP5jZUc+pGyVVDugS7JOTokQHpAlCX5zPEIHDfRUgA4lbx0FtRiRcUNZmYEnANeNK5unKTkcqI/Ofw==", "id"=>"4"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (35.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (20.1ms)[0m  [1m[33mUPDATE "tasks" SET "title" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["title", "comprar regalo para mama"], ["updated_at", "2017-12-02 02:52:43.464665"], ["id", 4]]
+  [1m[35m (108.4ms)[0m  [1m[36mcommit transaction[0m
+  Rendering tasks/show.json.jbuilder
+  Rendered tasks/_task.json.jbuilder (2.2ms)
+  Rendered tasks/show.json.jbuilder (79.5ms)
+Completed 200 OK in 394ms (Views: 160.1ms | ActiveRecord: 165.2ms)
+
+
+Started PUT "/tasks/5" for 127.0.0.1 at 2017-12-01 23:52:54 -0300
+Processing by TasksController#update as JSON
+  Parameters: {"task"=>{"title"=>"otra cosa que tenga que hacer"}, "authenticity_token"=>"nL1OHsvtWP5jZUc+pGyVVDugS7JOTokQHpAlCX5zPEIHDfRUgA4lbx0FtRiRcUNZmYEnANeNK5unKTkcqI/Ofw==", "id"=>"5"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[33mUPDATE "tasks" SET "title" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["title", "otra cosa que tenga que hacer"], ["updated_at", "2017-12-02 02:52:54.971703"], ["id", 5]]
+  [1m[35m (361.6ms)[0m  [1m[36mcommit transaction[0m
+  Rendering tasks/show.json.jbuilder
+  Rendered tasks/_task.json.jbuilder (1.4ms)
+  Rendered tasks/show.json.jbuilder (33.2ms)
+Completed 200 OK in 429ms (Views: 41.0ms | ActiveRecord: 369.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 23:53:42 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (319.7ms)
+Started GET "/tasks" for 127.0.0.1 at 2017-12-01 23:53:43 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (106.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (141.4ms)
+Completed 200 OK in 2958ms (Views: 2906.4ms | ActiveRecord: 1.9ms)
+
+
+Completed 200 OK in 5477ms (Views: 5354.4ms | ActiveRecord: 107.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2017-12-01 23:54:56 -0300
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 162ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=1):
+  
+app/controllers/tasks_controller.rb:68:in `set_task'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (171.5ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (25.8ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.5ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (363.7ms)
+Started GET "/tasks/4" for 127.0.0.1 at 2017-12-01 23:55:08 -0300
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTask Load (2.7ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 1758ms (Views: 1683.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/tasks/4" for 127.0.0.1 at 2017-12-01 23:55:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/tasks/4"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered collection of /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (924.1ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1016.0ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (2224.4ms)
+Started GET "/" for 127.0.0.1 at 2017-12-01 23:55:46 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (3942.5ms)
+Completed 401 Unauthorized in 4064ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_task_path' for #<#<Class:0x007f74f1dd94e8>:0x007f74f1dd8110>
+Did you mean?  edit_password_path):
+    54:               </td>
+    55:              
+    56:              <!-- EDIT -->
+    57:               <td><%= link_to  edit_task_path(task) do %>
+    58:                 <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+    59:                 <% end %>
+    60:               </td>
+  
+app/views/tasks/index.html.erb:57:in `block in _app_views_tasks_index_html_erb___3891408317673250751_70070125383520'
+app/views/tasks/index.html.erb:26:in `_app_views_tasks_index_html_erb___3891408317673250751_70070125383520'
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.4ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendering /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/mika/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.1ms)
+Started GET "/" for 127.0.0.1 at 2017-12-01 23:56:50 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (93.8ms)
+Completed 200 OK in 906ms (Views: 874.6ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-02 00:02:12 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (65.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (21.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (321.5ms)
+Completed 200 OK in 3132ms (Views: 2988.9ms | ActiveRecord: 87.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-02 00:03:02 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (158.2ms)
+Completed 200 OK in 30910ms (Views: 30902.5ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-12-02 00:04:56 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IUbHPNs2Nr1YVy/BdcSM3eyfNyxzA/u2fS83Xb/qR/669n12kNVLLCY33edA2VrQTr5bnurAWT3ElitIaRa1ww=="}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 76ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-02 00:04:57 -0300
+Processing by TasksController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-02 00:04:57 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 474ms (Views: 467.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-02 00:05:26 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KG4u9CfhGFEWuEnP1icApOmcJLJC8ioFnJaqG8xv0wPCwEgmYtNY1AT7YQFzcCEbSUdAJEi6zKzszRpArbosnQ==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KG4u9CfhGFEWuEnP1icApOmcJLJC8ioFnJaqG8xv0wPCwEgmYtNY1AT7YQFzcCEbSUdAJEi6zKzszRpArbosnQ==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 529ms (Views: 526.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-02 00:05:28 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o15Y1RBCIH4F5ZY3aStvgRxtIu1sFqYm/ggcZgm5cZhJ8D4HVXBg+xemvvnMfE4+vLZGe2ZeQI+OU6w9aGyOBg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o15Y1RBCIH4F5ZY3aStvgRxtIu1sFqYm/ggcZgm5cZhJ8D4HVXBg+xemvvnMfE4+vLZGe2ZeQI+OU6w9aGyOBg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 362ms (Views: 359.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-02 00:05:49 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hp04i1APs3ROYETbNLIiEuLAafWu115Tv3OpMw+2HwNsM15ZFT3z8VwjbBWR5QOtQhsNY6SfuPrPKBlobmPgnQ==", "user"=>{"email"=>"ale@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "ale@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 3.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hp04i1APs3ROYETbNLIiEuLAafWu115Tv3OpMw+2HwNsM15ZFT3z8VwjbBWR5QOtQhsNY6SfuPrPKBlobmPgnQ==", "user"=>{"email"=>"ale@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 927ms (Views: 375.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-02 00:07:06 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 635ms (Views: 633.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-02 00:07:43 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 178ms (Views: 175.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-12-02 00:07:58 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 300ms (Views: 297.9ms | ActiveRecord: 0.0ms)
+
+
