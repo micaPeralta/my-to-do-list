@@ -1,0 +1,96 @@
+<div class="wow fadeInUp content-card">
+
+  <p id="notice"><%= notice %></p>
+  
+
+   <%= link_to 'New Task', new_task_path, :class => "waves-effect waves-light bt " %>
+
+    <% if @tasks.empty? %>
+      
+      <div class="card-panel  amber lighten-5"> The list is empty</div>
+            
+      <% else %>
+        <table>
+          <thead>
+            <tr>
+              <th>.</th>
+              <th width="80%">Title</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+
+
+          <% @tasks.each do |task| %>
+            <tr>
+                
+               <!-- DONE -->
+              <td>            
+                <%= best_in_place task, :done, as: :checkbox,  collection: {
+                  false: image_tag('no-check.png',class: "icon"), true: image_tag('check.png',class: "icon")} 
+                    # image_tag('check.png'),
+                    # image_tag('no-check.png')]
+                %>
+              </td>
+              
+              </td>
+              
+              <!-- TITLE -->
+              <td>            
+                <%= best_in_place task, :title, :as => :input %>
+              </td>
+              
+             
+
+              
+              <!-- SHOW -->
+              <td>
+              <a class="" href="#modal#{<%= task.title %>}">
+               <i class="material-icons">more_horiz</i>
+             
+              </a>
+              </td>
+             
+             <!-- EDIT -->
+              <td><%= link_to  edit_task_path(task) do %>
+                <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+                <% end %>
+              </td>
+
+              <!-- DELETE -->
+              <td><%= link_to  task, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                  <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                <% end %>
+
+              </td>
+            </tr>
+
+
+
+              <!-- Modal Structure -->
+              <div id="modal#{<%= task.title %>}" class="modal">
+                <div class="modal-content">
+                  <h5><%= task.title %></h5>
+                  <!-- DESCRIPTION -->
+                  <p> 
+                  <strong>Description</strong>
+                     <%=  best_in_place  task, :description, :as => :textarea,:inner_class => 'materialize-textarea' %>  
+                  </p>
+                  <p> <strong>Due date:</strong> 
+                    <%= best_in_place task, :due_date, :as => :date, :class =>'datepicker', data_value: task.due_date%> </p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+              </div>
+              
+          <% end %>
+    </tbody>
+  </table>
+      <% end %>
+
+  <br>
+
+</div>

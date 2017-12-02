@@ -49,10 +49,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-
-  #ajustar textarea al contenido
-  gem 'autosize-rails'
-
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -63,8 +59,16 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
   #materialize framework frontend
   gem 'materialize-sass'
+
   # icons  font-awesome
   gem "font-awesome-rails"
+   #ajustar textarea al contenido
 
+  gem 'autosize-rails'
   #para la autenticación
   gem "devise" , github:"plataformatec/devise" 
+
+  # Editar campos con un CLICK
+  gem 'best_in_place', '~> 3.0.1'
+
+  gem 'jquery-turbolinks'

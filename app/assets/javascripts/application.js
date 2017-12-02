@@ -11,6 +11,14 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
+
 //= require_tree .
+//= require function
+
+//= require best_in_place
+//= require best_in_place.jquery-ui
+
+//= require materialize.min
+//= require turbolinks

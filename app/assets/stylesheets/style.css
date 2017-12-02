@@ -57,6 +57,16 @@ ul {
 }
 
 .font-pacifico{
-	font-family: 'Pacifico' , cursive;
+	font-family: 'Satisfy', cursive;
 }
 
+
+.icon{
+	width: 2em;
+	height: 2em;
+}
+
+a:hover 
+{
+  background: inherit ;text-decoration: none;color: black;
+}

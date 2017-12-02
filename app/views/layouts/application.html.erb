@@ -17,9 +17,7 @@
      
     
   	  <!--GOOGLE FONTS -->
-      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
-      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
-      
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
       
 
       <!-- ICONS MATERIALIZE -->
@@ -42,18 +40,26 @@
              
               <div class="row">
                     <div class="wow fadeInUp content-card">
+                    <br>  
                         <div class="icon-and-title-flex">
                         <!-- <img id='logo' src="<%= image_path('post.it.png')%>" class="appicon"></img>
                          -->
+                           <!-- <i class="fa fa-thumb-tack fa-4x" aria-hidden="true"></i> -->
+
                         <div class="title-container ">
-                    
+
                             <span class="text-title font-pacifico shadow" >My to do list</span>
                             <br><div class="intertext-padding"></div>
                             
-                            <span class="text-subtitle"><%= t('subtitle') %></span> 
+                            <!-- <span class="text-subtitle"><%= t('subtitle') %></span>  -->
                             <br><div class="intertext-padding"></div>
                           
-                        </div>  
+                        </div> 
+                        <div>
+                      <% if user_signed_in? %>
+                          <span>User<%= current_user.username %></span>
+                         <%end %>
+                        </div> 
                     </div>
                 
               </div>
@@ -75,8 +81,20 @@
 
               </div>
       
+    <% if user_signed_in? %>
 
   
+        <div class="fixed-action-btn ">
+            <!-- Botón flotante para el logout -->
+             <%= link_to(destroy_user_session_path, method: :delete,:class => 'btn-floating btn-large halfway-fab waves-effect waves-light teal') do %> 
+            
+               <i class="material-icons">exit_to_app</i>
+           
+            <% end %>
+
+           
+        </div>
+      <%end %>
  
     <!-- ===================================================================================================== -->
       
