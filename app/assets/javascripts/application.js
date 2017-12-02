@@ -14,11 +14,12 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 
-//= require_tree .
+
 //= require function
+
+//= require materialize.min
 
 //= require best_in_place
 //= require best_in_place.jquery-ui
 
-//= require materialize.min
 //= require turbolinks

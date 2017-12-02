@@ -9,13 +9,14 @@
       <meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
       <meta charset="utf-8">
 		  
-
+<style>
+  .datepicker{z-index:1151 !important;}
+</style>
       <link rel="icon" type="image/png" href="/favicon.png">
 	    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       
       <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload' %> 
      
-    
   	  <!--GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
       
@@ -41,7 +42,6 @@
                         
               <div class="row">
                     <div class="wow fadeInUp content-card">
-                    <br>  
                         <div class="icon-and-title-flex">
                         <!-- <img id='logo' src="<%= image_path('post.it.png')%>" class="appicon"></img>
                          -->
@@ -49,11 +49,11 @@
 
                         <div class="title-container ">
 
-                            <span class="text-title font-pacifico shadow" >My to do list</span>
-                            <br><div class="intertext-padding"></div>
+                            <span class="text-title  shadow" ><h3 class="font-pacifico">My to do list</h3></span>
+                            <div class="intertext-padding"></div>
                             
                             <!-- <span class="text-subtitle"><%= t('subtitle') %></span>  -->
-                            <br><div class="intertext-padding"></div>
+                            <div class="intertext-padding"></div>
                           
                         </div> 
                         <div>

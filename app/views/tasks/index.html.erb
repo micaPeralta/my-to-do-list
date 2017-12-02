@@ -11,13 +11,7 @@
             
       <% else %>
         <table>
-          <thead>
-            <tr>
-              <th>.</th>
-              <th width="80%">Title</th>
-              <th colspan="3"></th>
-            </tr>
-          </thead>
+         
 
           <tbody>
 
@@ -74,7 +68,7 @@
                      <%=  best_in_place  task, :description, :as => :textarea,:inner_class => 'materialize-textarea' %>  
                   </p>
                   <p> <strong>Due date:</strong> 
-                    <%= best_in_place task, :due_date, :as => :date, :class =>'datepicker', data_value: task.due_date%> </p>
+                    <%= best_in_place task, :due_date, :as => :date, :class =>'datepicker', data_value: "" %> </p>
                 </div>
                 <div class="modal-footer">
                   <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
