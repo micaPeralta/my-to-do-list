@@ -2,7 +2,7 @@
 
 My to-do list es una aplicación que te permite crear y manejar las distintas tareas que tengas pendientes para hacer.
 		
-Demo --> [https://sheltered-taiga-32394.herokuapp.com]
+Demo --> https://sheltered-taiga-32394.herokuapp.com
 
 ## Requerimientos
 
@@ -25,7 +25,7 @@ Demo --> [https://sheltered-taiga-32394.herokuapp.com]
 	$ rbenv install 2.3.1
 	$ rbenv global 2.3.1
 	$ gem install bundler
-	$ gem install rails -v 4.1.0
+	$ gem install rails -v 5.0.6
 	```
 	
   
