@@ -17,7 +17,22 @@ Things you may want to cover:
 	Bundle 1.13.6
 	Rails 5.0.6
 
+	Si tenes linux 
+	
+	```
 
+	# apt-get install -y autoconf bison build-essential lib{ssl,yaml,sqlite3}-dev libread
+	line6{,-dev} zlib1g{,-dev}
+	$ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+	$ cd ~/.rbenv && src/configure && make -C src
+	$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+	$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+	$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+	$ source ~/.bashrc
+	$ rbenv install 2.3.1
+	$ rbenv global 2.3.1
+	$ gem install bundler
+	```
   
 ## Instalación 
 
