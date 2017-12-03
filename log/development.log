@@ -15925,3 +15925,11 @@ Completed 200 OK in 3738ms (Views: 3682.5ms | ActiveRecord: 1.8ms)
 Completed 200 OK in 783ms (Views: 780.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-03 00:29:49 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 738ms (Views: 664.5ms | ActiveRecord: 22.3ms)
+
+
