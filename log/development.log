@@ -16039,3 +16039,49 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 182ms (Views: 150.8ms | ActiveRecord: 2.0ms)
 
 
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-03 00:38:54 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"53CUG5uN1x13U9uzcfZsnjfuhfA0nbPk4fX3poTFRecDpBVKy2p8WY8EmLqVzVEMqT4SaOOKM6q+b9oVIHmdXQ==", "user"=>{"email"=>"mike@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (55.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mike@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-12-03 03:38:54.864593"], ["last_sign_in_at", "2017-12-03 03:38:54.864593"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2017-12-03 03:38:54.876300"], ["id", 1]]
+  [1m[35m (100.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 894ms (ActiveRecord: 157.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-03 00:38:55 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (29.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (due_date >= '2017-12-03') AND "tasks"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (due_date >= '2017-12-03') AND "tasks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tasks/index.html.erb within layouts/application (137.2ms)
+Completed 200 OK in 521ms (Views: 354.6ms | ActiveRecord: 33.2ms)
+
+
+Started PUT "/tasks/10" for 127.0.0.1 at 2017-12-03 00:39:17 -0300
+Processing by TasksController#update as JSON
+  Parameters: {"task"=>{"due_date"=>"2017-12-20"}, "authenticity_token"=>"J2hHhZB4Y9ZYmI9UcMmvEjivGwHEdzgcggFmIKEJSonk2UkyjSj/hzhSvjbGTTdUartbHw/0Eq22qQ33FhXckg==", "id"=>"10"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "tasks" SET "due_date" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["due_date", "2017-12-20"], ["updated_at", "2017-12-03 03:39:17.818452"], ["id", 10]]
+  [1m[35m (132.0ms)[0m  [1m[36mcommit transaction[0m
+  Rendering tasks/show.json.jbuilder
+  Rendered tasks/_task.json.jbuilder (1.6ms)
+  Rendered tasks/show.json.jbuilder (36.6ms)
+Completed 200 OK in 267ms (Views: 52.6ms | ActiveRecord: 133.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2017-12-03 00:41:41 -0300
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE (due_date >= '2017-12-03') AND "tasks"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE (due_date >= '2017-12-03') AND "tasks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered tasks/index.html.erb within layouts/application (77.0ms)
+Completed 200 OK in 441ms (Views: 434.6ms | ActiveRecord: 1.9ms)
+
+

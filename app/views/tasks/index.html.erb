@@ -63,15 +63,15 @@
 
                 <div class="modal-content">
 
-                  <h5><%= task.title %></h5>
-                   To edit click in the field
+                  <h5>  <%= best_in_place task, :title, :as => :input %></h5>
+                  <span class="orange-text">To edit click in the field  </span> 
                   <!-- DESCRIPTION -->
                   <p> 
                   <strong>Description</strong>
                      <%=  best_in_place  task, :description, :as => :textarea,:inner_class => 'materialize-textarea' %>  
                   </p>
                   <p> <strong>Due date:</strong> 
-                    <%= best_in_place task, :due_date, :as => :date, :class =>'datepicker', data_value: "" %> </p>
+                    <%= best_in_place task, :due_date, :as => :date, data_value: "" %> </p>
                 </div>
                 <div class="modal-footer">
                   <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
