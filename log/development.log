@@ -15898,3 +15898,30 @@ Completed 200 OK in 89ms (Views: 12.1ms | ActiveRecord: 63.6ms)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("title", "due_date", "description", "done", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Una tarea cualquiera"], ["due_date", "2017-12-10"], ["description", "Velit nam voluptatem accusantium totam. Pariatur et magni enim nulla quia. Vel minus a beatae reiciendis explicabo similique. Consectetur expedita rerum quas aliquam ut aut."], ["done", "t"], ["created_at", "2017-12-02 21:08:58.202806"], ["updated_at", "2017-12-02 21:08:58.202806"], ["user_id", 1]]
   [1m[35m (106.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/tasks" for 127.0.0.1 at 2017-12-02 23:34:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+Completed 401 Unauthorized in 62ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-02 23:34:02 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (173.2ms)
+Started GET "/" for 127.0.0.1 at 2017-12-02 23:34:05 -0300
+Processing by TasksController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-02 23:34:05 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 3738ms (Views: 3682.5ms | ActiveRecord: 1.8ms)
+
+
+Completed 200 OK in 783ms (Views: 780.4ms | ActiveRecord: 0.0ms)
+
+

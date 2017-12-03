@@ -2,14 +2,7 @@
 
 My to-do list es una aplicación que te permite crear y manejar las distintas tareas que tengas pendientes para hacer.
 		
-	La clase Task cuenta con los siguientes campos:
-			
-			* title
-			* description
-			* due_date
-			* done
-
-Things you may want to cover:
+Demo --> [https://sheltered-taiga-32394.herokuapp.com]
 
 ## Requerimientos
 
@@ -17,7 +10,7 @@ Things you may want to cover:
 	Bundle 1.13.6
 	Rails 5.0.6
 
-	Si tenes linux 
+	Instalar dependencias (Linux) 
 	
 	```
 
@@ -32,7 +25,9 @@ Things you may want to cover:
 	$ rbenv install 2.3.1
 	$ rbenv global 2.3.1
 	$ gem install bundler
+	$ gem install rails -v 4.1.0
 	```
+	
   
 ## Instalación 
 
